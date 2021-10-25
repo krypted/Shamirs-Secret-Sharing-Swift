@@ -10,9 +10,7 @@ Based on Adi Shamir's Secret Sharing (https://en.wikipedia.org/wiki/Shamir%27s_S
 - For a quick test, you can ignore the two last arguments. They'll be set to the default 3 and 6.
  
 ## Troubleshooting
-If the script errors out with "xcrun: error: unable to find utility "xctest", not a developer tool or in PATH" then make sure to CD into the Sources directory of the project.
-  
-If the script errors out with "error: root manifest not found", check that `xcode-select -p` returns with:
-/Applications/Xcode.app/Contents/Developer
-  
-If not, set the location for Command Line Tools in Xcode by opening Xcode then clicking Preferences, then Locations.
+- If the script errors a boatload of unknowns, open the Xcode Project, click the main.swift, and build.
+- If the script errors out with "xcrun: error: unable to find utility "xctest", not a developer tool or in PATH" then make sure to CD into the Sources directory of the project.
+- If the script errors out with "error: root manifest not found", check that `xcode-select -p` returns with:
+/Applications/Xcode.app/Contents/Developer. If not, set the location for Command Line Tools in Xcode by opening Xcode then clicking Preferences, then Locations.
