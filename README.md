@@ -3,7 +3,17 @@ Ported Shamirs Secret Sharing Into A Swift Package
 
 Based on Adi Shamir's Secret Sharing (https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing). The intent is to split a secret into multiple parts, called shares. The shares can then be used to reconstruct the original secret. 
 
-## Usage
+Now you can copy the binary version to your Mac's bin folder to run it directly:
+cp shamirssecret /usr/local/bin/shamirssecret
+
+# Binary Usage
+- Generate shares from a secret and dump them into a new file:
+`shamirssecret create 89001 -m 4 -t 7 -d shares000`
+
+- Solve the secret from the saved file:
+`shamirssecret solve shares000`
+
+## Swift Package Usage
 - Build the script. You only need to build one time: swift build
 - Run with command: `swift run shamirssecret <secret> -m <minimum_shares> -t <total_shares>`
 - For example: `swift run shamirssecret 98801 -m 5 -t 7`
