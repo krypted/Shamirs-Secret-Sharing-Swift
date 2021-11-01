@@ -8,13 +8,15 @@ cp shamirssecret /usr/local/bin/shamirssecret
 
 # Binary Usage
 - Generate shares from a secret and dump them into a new file:
+
 `shamirssecret create 89001 -m 4 -t 7 -d shares000`
 
 - Solve the secret from the saved file:
+
 `shamirssecret solve shares000`
 
 ## Swift Package Usage
-- Build the script. You only need to build one time: swift build
+- Build the script. You only need to build one time: `swift build`
 - Run with command: `swift run shamirssecret <secret> -m <minimum_shares> -t <total_shares>`
 - For example: `swift run shamirssecret 98801 -m 5 -t 7`
 - For a quick test, you can ignore the two last arguments. They'll be set to the default 3 and 6.
