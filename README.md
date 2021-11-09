@@ -1,5 +1,5 @@
 # Shamirs-Secret-Sharing-Swift
-Ported Shamirs Secret Sharing Into A Swift Package
+Ported Adi Shamir's Secret Sharing Into A Swift Package with a Command Line Interface to Generate and Shard Keys
 
 Based on Adi Shamir's Secret Sharing (https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing). The intent is to split a secret into multiple parts, called shares. The shares can then be used to reconstruct the original secret. 
 
