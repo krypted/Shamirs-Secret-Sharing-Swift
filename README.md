@@ -8,6 +8,7 @@ cp shamirssecret /usr/local/bin/shamirssecret
 
 # Binary Usage
 - Encrypt: Create an ECC key pair and encrypt the input string with the public key. The private key and the encrypted string will be saved to files.
+
 `shamirssecret encrypt "abc123xyz" -k privatekey.txt -s encryptedtext.txt`
 
 - Shard: Create shares from the private key file.
