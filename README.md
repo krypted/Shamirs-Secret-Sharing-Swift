@@ -1,9 +1,9 @@
 # Shamirs-Secret-Sharing-Swift
 Ported Adi Shamir's Secret Sharing Into A Swift Package with a Command Line Interface to Generate and Shard Keys
 
-Based on Adi Shamir's Secret Sharing (https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing). The intent is to split a secret into multiple parts, called shares. The shares can then be used to reconstruct the original secret. 
+Based on Adi Shamir's Secret Sharing (https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing). The intent is to split a secret into multiple parts, called shares (or shards). The shares can then be used to reconstruct the original secret. Because it works on integers, this project has been expanded to encrypt a secret into an Elliptical Curve Cryptography (ECC) key and then to shard that.
 
-Now you can copy the binary version to your Mac's bin folder to run it directly:
+Can be compiled or copy the binary version to your Mac's bin folder to run it directly:
 
 `cp shamirssecret /usr/local/bin/shamirssecret`
 
