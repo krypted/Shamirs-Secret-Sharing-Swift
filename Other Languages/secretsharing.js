@@ -1,4 +1,10 @@
 /*global BigInt*/
+//
+// This nodejs script is written to run standalone or as a lambda. If being run standalone, the
+// local argument tells the script to be executed locally as a standalone script
+// For example if sharding 1234 use "node script.js local 1234"
+// Now let's get into the scripty bits
+//
 // 12th Mersenne Prime
 // (for this application we want a known prime number as close as
 // possible to our security level; e.g.  desired security level of 128
