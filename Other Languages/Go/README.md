@@ -1,6 +1,6 @@
 # Shamir Secret Sharing
 
-Splits a secret into n parts with threshold t according to the SSS algorithm.
+Splits a secret into `n` parts with threshold `t` according to the SSS algorithm.
 
 ## Usage:
 
